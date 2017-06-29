@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+{% block title %}{{label.title}}{% endblock %}
+{% block content %}
+<div>
+    <h1>{{label.title}}</h1>
+    <p>{{label.text}}</p>
+    <p>{{label.created_date}}</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data={{request.build_absolute_uri}}&size=100x100">
+</div>
+{% endblock %}

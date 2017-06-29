@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% block title %}Lista etykiet{% endblock %}
+{% block content %}
+    {% for label in labels %}
+    <div>
+        <a href="{% url 'label' slug=label.slug %}"><h4>{{label.title}}</h4></a>
+        <p>{{label.text}}</p>
+        <p>{{label.created_date}}</p>
+    </div>
+    {% endfor %}
+{% endblock %}

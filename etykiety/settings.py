@@ -26,6 +26,7 @@ SECRET_KEY = '%2o3#5crp4y-8!@q1g*0%jag4!uqcaqc$%nl-gm@!4+=gy#y3z'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'bogson.pythonanywhere.com'
 ]
 
@@ -122,3 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'public', 'static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
