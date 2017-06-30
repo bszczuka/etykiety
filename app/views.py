@@ -2,6 +2,11 @@ from django.shortcuts import render, get_object_or_404
 from .models import Label
 
 
+def home(request):
+    labels = Label.objects.all()
+    return render(request, 'app/home.html', {'labels': labels})
+
+
 def label_list(request):
     labels = Label.objects.all()
     return render(request, 'app/label/list.html', {'labels': labels})
