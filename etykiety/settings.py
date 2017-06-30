@@ -27,7 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'bogson.pythonanywhere.com'
+    'bogson.pythonanywhere.com',
+    'e-tykieta.pl',
+    'e-tykietka.pl',
 ]
 
 
