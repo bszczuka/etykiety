@@ -50,11 +50,16 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: white;
 }
+.navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
 .navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -91,11 +96,11 @@ a:focus {
 .navbar-custom .nav li.active {
   outline: none;
 }
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
 .navbar-custom .nav li.active a:hover {
   color: white;
+}
+.top-nav-collapse .navbar-hamburger {
+    color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
